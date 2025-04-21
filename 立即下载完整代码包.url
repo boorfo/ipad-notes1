@@ -1,2 +1,26 @@
-[InternetShortcut]
-URL=https://github.com/boorfo/ios-clipboard-to-github/archive/refs/heads/main.zip
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>iOS剪贴板笔记</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <textarea 
+            id="noteInput"
+            placeholder="轻点此处输入或粘贴内容..."
+            autocapitalize="sentences"
+            spellcheck="true"
+        ></textarea>
+        
+        <div class="toolbar">
+            <button onclick="pasteFromClipboard()">📋 粘贴内容</button>
+            <button onclick="uploadToGitHub()">⬆️ 上传GitHub</button>
+        </div>
+        <div id="status"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
